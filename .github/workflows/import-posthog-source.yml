@@ -1,0 +1,101 @@
+name: Import PostHog community-source reference
+
+# One-time push trigger plus manual rerun. Standard runners are free for public repositories.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/import-posthog-source.yml']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: posthog-source-import
+  cancel-in-progress: false
+
+jobs:
+  import-current-upstream-source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 110
+    steps:
+      - name: Check source branch does not exist
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          if git ls-remote --exit-code \
+            "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" \
+            refs/heads/posthog-upstream-snapshot >/dev/null 2>&1; then
+            echo "::error::Snapshot branch exists. This import will not overwrite it."
+            exit 1
+          fi
+
+      - name: Download complete tracked files from PostHog master (not full history)
+        run: |
+          set -euo pipefail
+          git -c protocol.version=2 clone \
+            --depth=1 --single-branch --branch master --no-checkout --filter=blob:none \
+            https://github.com/PostHog/posthog.git upstream
+          cd upstream
+          git fetch --depth=1 origin a081bda2be64e0520cec834fab22e1d66a670864
+          git checkout --detach a081bda2be64e0520cec834fab22e1d66a670864
+          test "$(git rev-parse HEAD)" = "a081bda2be64e0520cec834fab22e1d66a670864"
+          git rev-parse HEAD > ../UPSTREAM_COMMIT
+          git rev-parse 'HEAD^{tree}' > ../UPSTREAM_TREE
+          git ls-tree -r --name-only HEAD | wc -l | tee ../UPSTREAM_TRACKED_FILE_COUNT
+          if [ -f .gitmodules ]; then
+            echo "::warning::Upstream contains submodules: their content is not included in the Git superproject snapshot."
+            cat .gitmodules
+          fi
+          if [ -f .gitattributes ] && grep -Eq 'filter=lfs' .gitattributes; then
+            echo "::warning::Upstream declares Git LFS paths; verify that binary LFS objects are available separately."
+          fi
+
+      - name: Prepare community-only source snapshot excluding separately licensed ee/
+        run: |
+          set -euo pipefail
+          cd upstream
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          SOURCE_TREE="$(cat ../UPSTREAM_TREE)"
+          git checkout --orphan posthog-upstream-snapshot
+          git read-tree --empty
+          git read-tree --prefix=upstream/ "$SOURCE_TREE"
+          # Root LICENSE states ee/ is subject to separate terms prohibiting
+          # ordinary copying/redistribution. Never publish that subtree.
+          git rm --cached -r --ignore-unmatch upstream/ee
+          test "$(git ls-tree --name-only "$(git write-tree)")" = "upstream"
+          test -z "$(git ls-files 'upstream/ee/**')"
+          git -c core.hooksPath=/dev/null commit --quiet \
+            -m "PostHog community source reference, enterprise ee/ excluded"
+          git rev-parse HEAD:upstream > ../FILTERED_TREE
+          git ls-tree -r --name-only HEAD:upstream | wc -l | tee ../IMPORTED_FILE_COUNT
+          git fsck --no-reflogs --connectivity-only
+
+      - name: Push snapshot branch to research repository
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          cd upstream
+          git remote add research "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git -c core.hooksPath=/dev/null push research HEAD:refs/heads/posthog-upstream-snapshot
+
+      - name: Verify uploaded snapshot against upstream
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          cd upstream
+          git fetch research posthog-upstream-snapshot --depth=1
+          LOCAL_TREE="$(git rev-parse 'HEAD:upstream')"
+          REMOTE_TREE="$(git rev-parse 'FETCH_HEAD:upstream')"
+          test "${LOCAL_TREE}" = "${REMOTE_TREE}"
+          test "${REMOTE_TREE}" = "$(cat ../FILTERED_TREE)"
+          test "$(cat ../UPSTREAM_TREE)" = "f9042776f58f0d6e7bc01606ad4dc7a5d7c4078b"
+          echo "Verified matching Git tree: ${REMOTE_TREE}"
+          echo "Upstream source commit: $(cat ../UPSTREAM_COMMIT)"
+          echo "Upstream tracked-file count: $(cat ../UPSTREAM_TRACKED_FILE_COUNT)"
+          echo "Retained community file count: $(cat ../IMPORTED_FILE_COUNT)"
+          echo "Imported branch: posthog-upstream-snapshot"
