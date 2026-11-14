@@ -4,7 +4,7 @@ Dedicated source-code research for [PostHog](https://github.com/PostHog/posthog)
 
 ## Verified source and licence boundary
 
-PostHog's root `LICENSE` identifies the non-enterprise portions as MIT-licensed and the top-level `ee/` subtree as subject to a **separate commercial licence**. The commercial `ee/` files are **not being mirrored into this public reference repository**. The original root licence and copyright notices will remain in the retained community snapshot.
+PostHog's root `LICENSE` identifies the non-enterprise portions as MIT-licensed and the top-level `ee/` subtree as subject to a **separate commercial licence**. The separately licensed top-level `ee/` files **were excluded from the public reference snapshot**. The original root licence and copyright notices will remain in the retained community snapshot.
 
 - Pinned upstream repository: `PostHog/posthog`, branch `master`
 - Pinned original commit: `a081bda2be64e0520cec834fab22e1d66a670864`
@@ -15,6 +15,11 @@ PostHog's root `LICENSE` identifies the non-enterprise portions as MIT-licensed 
 - [Successful import and integrity verification](https://github.com/Anselm04/PostHog-Source-Code-Reference/actions/runs/43538138742)
 
 **The GitHub Actions job passed remote filtered-tree integrity verification.** Filtered Git trees do not match the original unfiltered tree, by design. An imported snapshot is not a full historical mirror, complete cloud backend, LFS payload or submodule checkout.
+
+- Original Git-tracked files: **71,984**
+- Community snapshot retained: **71,145** files
+- Excluded top-level `ee/` files: **839**
+- Verified filtered Git tree: `012523f26af8f806b43d98a24387b430154721ef`
 
 ## Engineering use
 
