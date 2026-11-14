@@ -1,6 +1,6 @@
 name: Import PostHog community-source reference
 
-# One-time push trigger plus manual rerun. Standard runners are free for public repositories.
+# Source-only initial reference import: enterprise ee/ excluded; no upstream code execution.
 on:
   workflow_dispatch:
   push:
