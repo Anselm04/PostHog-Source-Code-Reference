@@ -1,0 +1,902 @@
+{
+  "source": "https://github.com/PostHog/posthog.git",
+  "commit": "a081bda2be64e0520cec834fab22e1d66a670864",
+  "number_of_original_workflow_files": 149,
+  "original_ci_is_disabled": true,
+  "files": [
+    {
+      "upstream_path": ".github/workflows/_rust-build-images.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/_rust-build-images.yml",
+      "git_blob": "b0357995209e458aca2dd2fbd3c78e5e3f7a8cd5",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/actions.lock",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/actions.lock",
+      "git_blob": "a605f9dbf97d29def6bcc4e2d4257e4ca7760a4e",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/auto-assign-labels.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/auto-assign-labels.yml",
+      "git_blob": "83616c5bbf3cc0d018bc93e555723a46d127229f",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/auto-assign-reviewers.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/auto-assign-reviewers.yml",
+      "git_blob": "9e09f31166a226cb6cda78da8441b2aa6bccf35a",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/browserslist.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/browserslist.yml",
+      "git_blob": "4bdcabb0c459f82e4a58cfb923e6a948fd9302bb",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/build-deltalite.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/build-deltalite.yml",
+      "git_blob": "42a55efbae9165976cfe50cb6e21b38fa711716a",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/build-hobby-installer.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/build-hobby-installer.yml",
+      "git_blob": "afacbcc9c4c6fdbf8f94a873f13cb8f2b8fefa72",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/build-hogql-parser-npm.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/build-hogql-parser-npm.yml",
+      "git_blob": "a836365b40bb1b8c1f5ce92ba906bfd2ecd0a679",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/build-hogql-parser-rs.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/build-hogql-parser-rs.yml",
+      "git_blob": "9db26f52ef8da31f3ca0b4516f44b80f7897f980",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/build-hogql-parser.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/build-hogql-parser.yml",
+      "git_blob": "2816f44dfdd22c208acb574bc2878dbf31009887",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/build-livestream-tui.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/build-livestream-tui.yml",
+      "git_blob": "dc215fd7d8af1febc30e75930b77361eba564bb9",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/build-phrocs.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/build-phrocs.yml",
+      "git_blob": "404bdd9524d1efe484ecbc356df7950059cb2374",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/canary-flags-enable.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/canary-flags-enable.yml",
+      "git_blob": "da183916b646ba35b17c843448b00e520a3b5d0b",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/cd-agent-proxy-image.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/cd-agent-proxy-image.yml",
+      "git_blob": "5de002047b280e5b01314bfec284547939ef9aab",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/cd-credentials-service-image.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/cd-credentials-service-image.yml",
+      "git_blob": "da776835ae542181ea24f7484dad327526273087",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/cd-llm-analytics-image.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/cd-llm-analytics-image.yml",
+      "git_blob": "6eb32208d76c3ec9790113b20b5caec86e93424f",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/cd-mcp-image.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/cd-mcp-image.yml",
+      "git_blob": "dd36072c37e638ebff630c8bdbcd342bf0a5c43b",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/cd-metrics-agent-image.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/cd-metrics-agent-image.yml",
+      "git_blob": "87f659dca53a69abdfc86a3c00945e9fc456f675",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/cd-sandbox-base-image.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/cd-sandbox-base-image.yml",
+      "git_blob": "c4732fdb353b5fd68610ea4dff3f7886c2985045",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-actionlint.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-actionlint.yml",
+      "git_blob": "cb0484ab27e30e2c63fcd16500a1e3745fa711a7",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-agent-egress.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-agent-egress.yml",
+      "git_blob": "253cbddc23018abf26090f42f08c4cfe1b3e846e",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-agent-proxy.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-agent-proxy.yml",
+      "git_blob": "19bc77b945eea4c0d46c4173408029d9890d7cfd",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-agent-skills.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-agent-skills.yml",
+      "git_blob": "2bd3d3400a06f7d37cf6fe2387bfe0437c7161d4",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-alerts-devex.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-alerts-devex.yml",
+      "git_blob": "bb22ce93fcf4c6b123ff8b47d4cd14695ff3f4c7",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-backend-schema-mirror.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-backend-schema-mirror.yml",
+      "git_blob": "a17238878f89bc9010842e9dfc9694e4cc05353b",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-backend-update-test-timing.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-backend-update-test-timing.yml",
+      "git_blob": "815839cceb4971ae672df63db9264a3b142ad648",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-cli.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-cli.yml",
+      "git_blob": "826bbdee459f06a062e2db3653ac3840420c58ae",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-clickhouse-hcl-schema.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-clickhouse-hcl-schema.yml",
+      "git_blob": "35c608106e7005a1878ba164cf2cfc615c5886c0",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-clickhouse-multinode-migrations.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-clickhouse-multinode-migrations.yml",
+      "git_blob": "5e929c6756387d24bd7080d46c187a03841d9d7f",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-clickhouse-util-udfs.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-clickhouse-util-udfs.yml",
+      "git_blob": "b5747604d32c6f8478ec9d6cda2179335f0af789",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-credentials-service.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-credentials-service.yml",
+      "git_blob": "2a94b4f2c35c015831f071dbac1a9b2ee94bcc97",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-dagster.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-dagster.yml",
+      "git_blob": "091dc14b6fc7a532ffce4927bc86c4b3065a2c1b",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-deltalite-python.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-deltalite-python.yml",
+      "git_blob": "80b124e0821fb5c901ae55e9b68e46454191f298",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-depot-action-mirrors.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-depot-action-mirrors.yml",
+      "git_blob": "041831ebccb8d9ef105d99ed38e91b4ffbed994e",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-dev-setup.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-dev-setup.yml",
+      "git_blob": "000ee0c0da41d66eec55867fb80286a6fdb52566",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-docs-check.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-docs-check.yml",
+      "git_blob": "067ed8e3de53529ac775da44ba6d1bb85c96c65d",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-duplication.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-duplication.yml",
+      "git_blob": "694638c1b4097e2015a59d4872a712e468777eaf",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-e2e-playwright-audit.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-e2e-playwright-audit.yml",
+      "git_blob": "1d9f8c6c5d926f2b9d7c354fd37947719059389b",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-e2e-playwright.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-e2e-playwright.yml",
+      "git_blob": "415ea2453d14f4aceaddaea91029fa9003b47392",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-frontend.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-frontend.yml",
+      "git_blob": "b11949dc9bab5d03375b0d78a57a81bc5562ec8e",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-geoip-canary.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-geoip-canary.yml",
+      "git_blob": "c499c6ce79737a994f767ce7ef52ee2c3b6f0057",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-hobby-installer.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-hobby-installer.yml",
+      "git_blob": "e293e1ee578a5d4bb66d6e9fd9a646ece9f8b7b3",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-hobby.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-hobby.yml",
+      "git_blob": "14d92f44236f7f07c04b9dc5f00239ec81c8585a",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-hog.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-hog.yml",
+      "git_blob": "b552f98ebd08500d8889f20907b570656d73aa5e",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-hoglang.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-hoglang.yml",
+      "git_blob": "c57c032ae3672cc49ed112b7064e216aefe0094d",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-inbox-ranking.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-inbox-ranking.yml",
+      "git_blob": "8e0949943096c89a9799763ea884340c1ca42e56",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-lint-workflows.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-lint-workflows.yml",
+      "git_blob": "ffa0a4466f7c0de9f13be4042fc83c31fe718450",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-livestream-tui.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-livestream-tui.yml",
+      "git_blob": "ac0538d97d02398b474d8e4a6baebdb7db8f2b90",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-livestream.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-livestream.yml",
+      "git_blob": "317dadb5209ddbfd726980d531dcdda732917cbf",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-llm-gateway.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-llm-gateway.yml",
+      "git_blob": "0cfb024155e20f8232e875141b8ea9fae43b0c03",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-master-run-traces.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-master-run-traces.yml",
+      "git_blob": "95f07bc03c54a07b6944c0221a48fc0d4044dd8c",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-mcp-agent-api-diff.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-mcp-agent-api-diff.yml",
+      "git_blob": "cd71c5d9c641db85edd60915c024cf4481ef108c",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-mcp-live-canary.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-mcp-live-canary.yml",
+      "git_blob": "8871da55cea67fcbd5117e55c47c545204a04c53",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-mcp-ui-apps.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-mcp-ui-apps.yml",
+      "git_blob": "e94b403a832d87ac3d9e9e899ffcd8d96bfaa772",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-mcp.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-mcp.yml",
+      "git_blob": "055e3d203b4dbca17230f0f72125ebf68e700e93",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-merge-queue-run-traces.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-merge-queue-run-traces.yml",
+      "git_blob": "bccbcb695ab3b0e60bd0bd026c24bae9529433dd",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-migrations-service-separation-check.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-migrations-service-separation-check.yml",
+      "git_blob": "404a81705ac1e6aa7dba36234f810b03622ab622",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-ml-mirror-image-scrub-container.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-ml-mirror-image-scrub-container.yml",
+      "git_blob": "de50660747d091d8df38ed1c210221c0b2605bf6",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-nodejs-container.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-nodejs-container.yml",
+      "git_blob": "8820b0c018b3d4aa65e9f993fab8374a6c03cfc4",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-nodejs.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-nodejs.yml",
+      "git_blob": "b9859db2e45ead99773665dbd561cc084e91f191",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-oauth-proxy.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-oauth-proxy.yml",
+      "git_blob": "e27cbb8a156a651addb64b1a8f8ae13cd25f6766",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-openapi-codegen.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-openapi-codegen.yml",
+      "git_blob": "352b8b17047560f4a727f6628b6a4ea2d82b062a",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-owners-live-lint.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-owners-live-lint.yml",
+      "git_blob": "e4686f6e14be69f1dd2030b11a0d52f84fb8e63c",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-paths-filter.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-paths-filter.yml",
+      "git_blob": "8bb232752be07fdd1e3c472d8a513da9e5571b51",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-phrocs.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-phrocs.yml",
+      "git_blob": "5fe863f513bc659ebae1b761e07c7216d37f01d7",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-playwright-container.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-playwright-container.yml",
+      "git_blob": "8abed1407f177e24c861822f0de9459d4d5ab40d",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-proto.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-proto.yml",
+      "git_blob": "fd58c91791fb870030553429c9b001d2d7548cc6",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-python.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-python.yml",
+      "git_blob": "62336d48e3194b4e310f7f96a9d5300b18dfb91a",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-recording-rasterizer-container.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-recording-rasterizer-container.yml",
+      "git_blob": "7ddde09f045723d09f2d0939cc04c4ce9401ee06",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-rust-flags-integration.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-rust-flags-integration.yml",
+      "git_blob": "1c3c7e07df30460b9a845f762097a8b862effc6d",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-rust.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-rust.yml",
+      "git_blob": "98fc570b1fcf6f0c9bd357bf4c349231af8a8133",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-scripts.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-scripts.yml",
+      "git_blob": "bfa9963cdf07b9754c8768b14cad82d394e06007",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-security.yaml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-security.yaml",
+      "git_blob": "8e6731266bce2b6937b6b64eb2233175770e00c7",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-storybook-update-test-timing.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-storybook-update-test-timing.yml",
+      "git_blob": "fbac2e4bbe946872b8b14004fb7e10624b22a1b8",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-storybook.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-storybook.yml",
+      "git_blob": "11f34fe36e195d626acad515bebc0027818f035b",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-survey-sdk-check.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-survey-sdk-check.yml",
+      "git_blob": "ffe4a6028ad62cd7acf7ac4df7a049c76b764fd3",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-toolbar-extension.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-toolbar-extension.yml",
+      "git_blob": "e515a91b51573518a0acb990082912bcb4b175e3",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci-turbo.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/ci-turbo.yml",
+      "git_blob": "9f7a8291f1305939d93fa3fd4fcaf6f26be156fb",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/container-images-cd.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/container-images-cd.yml",
+      "git_blob": "670aa740cf0d91037e4f2324cf759db6c66878f1",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/container-images-ci.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/container-images-ci.yml",
+      "git_blob": "5b8d87d062063bcda74a929bc274d67c3b7051a3",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/container-images-label-ci.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/container-images-label-ci.yml",
+      "git_blob": "1b62ea665a7e62f9f3ab77202613945f35130513",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/dependency-proof-trigger.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/dependency-proof-trigger.yml",
+      "git_blob": "ecc9110d0b075d4a11374078ebd547f6151345ee",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/dependency-proof.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/dependency-proof.yml",
+      "git_blob": "64e5a704debc6e45d7f7e6d33990a49288ef3c2d",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/depot-retry-on-comment.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/depot-retry-on-comment.yml",
+      "git_blob": "60fe372a4d1bf56e72ad45aafcda31aa1b33f345",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/desktop-agent-release-verify.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/desktop-agent-release-verify.yml",
+      "git_blob": "19bd6533f7082fe0ccf3d10ca451cda9a5f24875",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/desktop-agent-release.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/desktop-agent-release.yml",
+      "git_blob": "2f7bc9d505a95cfc2dffe3c2069e99e436d25a60",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/desktop-agent-tag.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/desktop-agent-tag.yml",
+      "git_blob": "a2cac680e56555d53dbb360f3896c21c9617e83f",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/desktop-backend-coupling-rerun.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/desktop-backend-coupling-rerun.yml",
+      "git_blob": "4f8d35696b48eb8dd70244ec558d8e7511fb8f9f",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/desktop-build-test.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/desktop-build-test.yml",
+      "git_blob": "1fe6fa3618f7bddb22b3df05ffa15747c51b26a0",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/desktop-build.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/desktop-build.yml",
+      "git_blob": "298cc317f629b7e2b6fb9a520790a914defa96c8",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/desktop-ci.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/desktop-ci.yml",
+      "git_blob": "624e0b7f722437237aeb4a75ec941e8126b8db88",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/desktop-cleanup-draft-releases.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/desktop-cleanup-draft-releases.yml",
+      "git_blob": "4b3b2b5622302003d0d41d35f9622e3ff529ca6f",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/desktop-quality.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/desktop-quality.yml",
+      "git_blob": "01f8cd851d6da1fd04d14ed990a7679b51661324",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/desktop-react-doctor.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/desktop-react-doctor.yml",
+      "git_blob": "2ccc7fad9591f043b7c00ab78e6b519aeab693c9",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/desktop-release.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/desktop-release.yml",
+      "git_blob": "b963b0a32f688fa8f6cf1b57803b84f58d222725",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/desktop-sync-benjamin.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/desktop-sync-benjamin.yml",
+      "git_blob": "25848a45ee0244de5a19b8c10983edf99fd29600",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/desktop-tag.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/desktop-tag.yml",
+      "git_blob": "588d8b67ab1d8e6f0fbd3d0f2863e03f0b25add6",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/desktop-test.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/desktop-test.yml",
+      "git_blob": "b307ba11cf63cf2d5f30c8a6c77b87788aff03d3",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/desktop-typecheck.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/desktop-typecheck.yml",
+      "git_blob": "54439e823df30a29559fe8a05ca8dc79394a8402",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/desktop-update-e2e.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/desktop-update-e2e.yml",
+      "git_blob": "6d992eb12d688bc1e5f21194cfeafe7786113192",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/desktop-warm-caches.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/desktop-warm-caches.yml",
+      "git_blob": "f658f183a2080fa9e54cba2cfa802211dc25eb19",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/dev-sandbox-selftest.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/dev-sandbox-selftest.yml",
+      "git_blob": "1fa6b47dfd3141e4eb9e4a277ad6ca0e19d0b177",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/docs-preview-trigger.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/docs-preview-trigger.yml",
+      "git_blob": "bc18ffa820858b67a2a37b4ef616c72e298e0173",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/eng-analytics-weekly-digest.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/eng-analytics-weekly-digest.yml",
+      "git_blob": "e079c0eccae32fa074dd6d65e8a2e759b8aa2ee2",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/foss-sync.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/foss-sync.yml",
+      "git_blob": "e1eeb540adfef35a22418c9660cf769b158a4bcf",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/hogbox-preview-cleanup.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/hogbox-preview-cleanup.yml",
+      "git_blob": "feec04745d1b188f4e111c8880d4654091498823",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/hogbox-preview-env.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/hogbox-preview-env.yml",
+      "git_blob": "e4c26cc6bae47109d4eaa3f2d6acc0b957233f29",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/inkeep-agent.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/inkeep-agent.yml",
+      "git_blob": "21131ebeff4a7d62d539ba3c3fde3b9c21acec2f",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/livestream-docker-image.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/livestream-docker-image.yml",
+      "git_blob": "1c3c7cc5aeea3ff963c55e16c6c9e1e98e353f94",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/llm-gateway-cd.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/llm-gateway-cd.yml",
+      "git_blob": "17ec51f76bcba41945ec67aedc541e97bc25275c",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/mobile-build.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/mobile-build.yml",
+      "git_blob": "b0d9588a46cf7e8757b68fb6af283fe1b9249466",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/mobile-ci.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/mobile-ci.yml",
+      "git_blob": "1a17c20a91ae681d86a6614fe8f33725bba43625",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/mobile-release.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/mobile-release.yml",
+      "git_blob": "0611167f48a176b3e8e5744e7ea0ac6a001d6226",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/monitor-github-rate-limit.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/monitor-github-rate-limit.yml",
+      "git_blob": "97786ae7b0b2f8c870a2f0f657d4a151627fea03",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/pnpm-store-cache.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/pnpm-store-cache.yml",
+      "git_blob": "444c0bce860179ed7fa9fd5a6fb5606f0210e848",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/pr-cleanup.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/pr-cleanup.yml",
+      "git_blob": "d9ca389ed734a749c6a944fffc5eba12cf56d782",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/pr-closed.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/pr-closed.yml",
+      "git_blob": "3b839f0c382983adec98e995e50a65913ccb6e28",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/pr-comment-density.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/pr-comment-density.yml",
+      "git_blob": "d4aca54e55fb8262fa1887253e5467c0f6e63040",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/pr-housekeeping.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/pr-housekeeping.yml",
+      "git_blob": "261c469973308a19c8a6f18e32693832ef86abb5",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/pr-opened.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/pr-opened.yml",
+      "git_blob": "96203d882aba53cfb7fb2e316bb20efd64ac6b3d",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/pr-posthog-js-reviewer.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/pr-posthog-js-reviewer.yml",
+      "git_blob": "21843465d4a5f1c22c85725e43e4a9bfed621a06",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/pr-priority-review.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/pr-priority-review.yml",
+      "git_blob": "f9df1e025898a4a7132372fdc1c53409db2e40c2",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/pr-resolve-outdated-bot-comments.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/pr-resolve-outdated-bot-comments.yml",
+      "git_blob": "733bfbc4901c9e0619420c517f8c43ad69980278",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/pr-stack-depth.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/pr-stack-depth.yml",
+      "git_blob": "2c2ecee74dc9585d5cf8d5d8d072223e8dcb0ec9",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/pr-updated.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/pr-updated.yml",
+      "git_blob": "640b5fd094531952fe73f648dba77ecf0fb6ed8d",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/private-sync.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/private-sync.yml",
+      "git_blob": "2ab75c822613550584fb444e7849a245a3ab62bf",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/publish-hogli.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/publish-hogli.yml",
+      "git_blob": "013878073cce6891fa3cb76272e761b0fab8a049",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/publish-owners-yaml.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/publish-owners-yaml.yml",
+      "git_blob": "8e9e6aeb4bd48b35a9c99f5cc7f0efc9d89033ab",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/publish-quill-npm.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/publish-quill-npm.yml",
+      "git_blob": "c5c12f9d4bb9ca6e127d27234997c729fa9bc68c",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/publish-replay-anonymizer-crate.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/publish-replay-anonymizer-crate.yml",
+      "git_blob": "06d3fe0af5cefe50eea04fb9cf0d4c57ace679b9",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/publish-symbol-data-crate.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/publish-symbol-data-crate.yml",
+      "git_blob": "1caa371fdcd653b34e00ac0c7b268fdda1979ed2",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/release-cli.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/release-cli.yml",
+      "git_blob": "40c502af7a9b1b9552884e2d827f6ef36734c500",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/release-toolbar-extension.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/release-toolbar-extension.yml",
+      "git_blob": "1b2c87382c51563541bd907e02954e6ce13e3d78",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/release.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/release.yml",
+      "git_blob": "e38d78b4a8adc0909c36ca94f29efcbabfdb1358",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/renovate-dashboard-digest.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/renovate-dashboard-digest.yml",
+      "git_blob": "91ab612e41d88d4cfa792c804fe7f7ea39c77d31",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/rust-docker-build.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/rust-docker-build.yml",
+      "git_blob": "81cad2e91cc5a9b7c8db7d703a2f1626cfa71afc",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/rust-smoke-test-build.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/rust-smoke-test-build.yml",
+      "git_blob": "b06b99496e6b312d4952b0b015b725888b209a90",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/shellcheck.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/shellcheck.yml",
+      "git_blob": "cc89a03521b2d24b0541bf4420362681e577ee64",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/stale.yaml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/stale.yaml",
+      "git_blob": "e03fb1b7df33e17dda63216dabd16f414bf878f4",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/terragrunt-posthog.yaml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/terragrunt-posthog.yaml",
+      "git_blob": "8faf5ed11b557c7c0b573e67f10be31ecbe8970d",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/test-quarantine.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/test-quarantine.yml",
+      "git_blob": "d5c606466bb69e48e75fa0df8bc4ef34fcac64f8",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/trunk-impacted-targets.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/trunk-impacted-targets.yml",
+      "git_blob": "5716fedeaa1e6a0713ba3e0c7a2f0babf10f3283",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/update-ai-costs-stale-alert.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/update-ai-costs-stale-alert.yml",
+      "git_blob": "010f48f8debfb26b7486ba280321d378a48d3303",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/update-ai-costs.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/update-ai-costs.yml",
+      "git_blob": "7fef9f1dfcd1bc585da2aaa95e92612c644ef381",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/update-bot-ips.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/update-bot-ips.yml",
+      "git_blob": "e252c60586b52749d880ea6dd68e1580435f82eb",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/update-sandbox-agent-version.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/update-sandbox-agent-version.yml",
+      "git_blob": "71bbbc5832d355ca349bbc4aeb23efe2177e0b0a",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/weekly-flaky-report.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/weekly-flaky-report.yml",
+      "git_blob": "3c4a3c6177e9cc62aa67bf67d27adf6396f870c1",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/weekly-mcp-tool-health-report.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/weekly-mcp-tool-health-report.yml",
+      "git_blob": "379112b806982d2c4a5b3defbb887b11b43b0690",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/weekly-slow-tests-report.yml",
+      "reference_path": "upstream-workflow-snapshots/posthog/.github/workflows/weekly-slow-tests-report.yml",
+      "git_blob": "a3153e39b75b40eba68db261a45f155734743049",
+      "original_mode": "100644"
+    }
+  ]
+}
